@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2023 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>ALT DisplayManager policies definitions</displayName>
+  <description> Defining DisplayManager policies for the ALT operating system.</description>
+  <resources>
+    <stringTable>
+
+      <string id="DispManAnyPolkit">Restricts access to the list of user accounts</string>
+      <string id="DispManAnyPolkit_Help">Policy for setting properties for any user
+
+This policy grants or restricts access to a list of user accounts.
+
+Disabledd/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+
+Enabled — permission to mount with set rights;
+
+Possible values:
+
+"No" — block permissions (the user is not allowed to perform the action);
+
+"Yes" — grant permissions (the user can perform the action without any authentication);
+
+"Auth_self" — The user must enter their password to authenticate. Note that this permission is not sufficient for most uses on multi-user systems, the "Auth_admin" permission is generally recommended;
+
+"Auth_admin" — The user must enter an administrator password on each request. Requires user authentication with administrator rights;
+
+"Auth_self_keep" — Similar to "Auth_self", but the authorization is kept for a short period of time (for example, five minutes). Note that this permission is not sufficient for most uses on multi-user systems, the "Auth_admin_keep" permission is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but the authorization is kept for a short period of time (for example, five minutes);
+
+Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
+
+      </string>
+      <string id="DispManAnyPolkitUser">Restricts access to the list of user accounts</string>
+      <string id="DispManAnyPolkitUser_Help">Policy for setting properties for any user
+
+This policy grants or restricts access to a list of user accounts.
+
+Disabledd/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+
+Enabled — permission to mount with set rights;
+
+Possible values:
+
+"No" — block permissions (the user is not allowed to perform the action);
+
+"Yes" — grant permissions (the user can perform the action without any authentication);
+
+"Auth_self" — The user must enter their password to authenticate. Note that this permission is not sufficient for most uses on multi-user systems, the "Auth_admin" permission is generally recommended;
+
+"Auth_admin" — The user must enter an administrator password on each request. Requires user authentication with administrator rights;
+
+"Auth_self_keep" — Similar to "Auth_self", but the authorization is kept for a short period of time (for example, five minutes). Note that this permission is not sufficient for most uses on multi-user systems, the "Auth_admin_keep" permis
+
+"Auth_admin_keep" — similar to "Auth_admin", but the authorization is kept for a short period of time (for example, five minutes);
+
+Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
+
+      </string>
+      <string id="DispManOwnPolkit">Restricts access to his own account</string>
+      <string id="DispManOwnPolkit_Help">Policy for setting the properties of your user
+
+This policy grants or restricts access to one's account.
+
+Disabledd/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+
+Enabled — permission to mount with set rights;
+
+Possible values:
+
+"No" — block permissions (the user is not allowed to perform the action);
+
+"Yes" — grant permissions (the user can perform the action without any authentication);
+
+"Auth_self" — The user must enter their password to authenticate. Note that this permission is not sufficient for most uses on multi-user systems, the "Auth_admin" permission is generally recommended;
+
+"Auth_admin" — The user must enter an administrator password on each request. Requires user authentication with administrator rights;
+
+"Auth_self_keep" — Similar to "Auth_self", but the authorization is kept for a short period of time (for example, five minutes). Note that this permission is not sufficient for most uses on multi-user systems, the "Auth_admin_keep" permission is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but the authorization is kept for a short period of time (for example, five minutes);
+
+Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
+
+      </string>
+      <string id="DispManOwnPolkitUser">Restricts access to his own account</string>
+      <string id="DispManOwnPolkitUser_Help">Policy for setting the properties of your user
+      
+This policy grants or restricts access to one's account.
+
+Disabledd/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+
+Enabled — permission to mount with set rights;
+
+Possible values:
+
+"No" — block permissions (the user is not allowed to perform the action);
+
+"Yes" — grant permissions (the user can perform the action without any authentication);
+
+"Auth_self" — The user must enter their password to authenticate. Note that this permission is not sufficient for most uses on multi-user systems, the "Auth_admin" permission is generally recommended;
+
+"Auth_admin" — The user must enter an administrator password on each request. Requires user authentication with administrator rights;
+
+"Auth_self_keep" — Similar to "Auth_self", but the authorization is kept for a short period of time (for example, five minutes). Note that this permission is not sufficient for most uses on multi-user systems, the "Auth_admin_keep" permis
+
+"Auth_admin_keep" — similar to "Auth_admin", but the authorization is kept for a short period of time (for example, five minutes);
+
+Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
+
+
+      </string>
+      <string id="DispManReadAnyPolkit">Restricts reading the list of user accounts</string>
+      <string id="DispManReadAnyPolkit_Help">Policy for setting properties for any user
+
+This policy grants or restricts permissions to read a list of user accounts.
+
+Disabledd/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+
+Enabled — permission to mount with set rights;
+
+Possible values:
+
+"No" — block permissions (the user is not allowed to perform the action);
+
+"Yes" — grant permissions (the user can perform the action without any authentication);
+
+"Auth_self" — The user must enter their password to authenticate. Note that this permission is not sufficient for most uses on multi-user systems, the "Auth_admin" permission is generally recommended;
+
+"Auth_admin" — The user must enter an administrator password on each request. Requires user authentication with administrator rights;
+
+"Auth_self_keep" — Similar to "Auth_self", but the authorization is kept for a short period of time (for example, five minutes). Note that this permission is not sufficient for most uses on multi-user systems, the "Auth_admin_keep" permission is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but the authorization is kept for a short period of time (for example, five minutes);
+
+Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
+
+      </string>
+      <string id="DispManReadAnyPolkitUser">Restricts reading the list of user accounts</string>
+      <string id="DispManReadAnyPolkitUser_Help">Policy for setting properties for any user
+
+This policy grants or restricts permissions to read a list of user accounts.
+
+Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+
+Enabled — permission to mount with set rights;
+
+Possible values:
+
+"No" — block permissions (the user is not allowed to perform the action);
+
+"Yes" — grant permissions (the user can perform the action without any authentication);
+
+"Auth_self" — The user must enter their password to authenticate. Note that this permission is not sufficient for most uses on multi-user systems, the "Auth_admin" permission is generally recommended;
+
+"Auth_admin" — The user must enter an administrator password on each request. Requires user authentication with administrator rights;
+
+"Auth_self_keep" — Similar to "Auth_self", but the authorization is kept for a short period of time (for example, five minutes). Note that this permission is not sufficient for most uses on multi-user systems, the "Auth_admin_keep" permis
+
+"Auth_admin_keep" — similar to "Auth_admin", but the authorization is kept for a short period of time (for example, five minutes);
+
+Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
+
+
+
+      </string>
+
+      <string id="org-freedesktop-displaymanager-No">No</string>
+      <string id="org-freedesktop-displaymanager-Yes">Yes</string>
+      <string id="org-freedesktop-displaymanager-Auth-self">Auth_self</string>
+      <string id="org-freedesktop-displaymanager-Auth-admin">Auth_admin</string>
+      <string id="org-freedesktop-displaymanager-Auth-self-keep">Auth_self_keep</string>
+      <string id="org-freedesktop-displaymanager-Auth-admin-keep">Auth_admin_keep</string>
+
+</stringTable>
+    <presentationTable>
+      <presentation id="DispManAnyPolkit-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopDisplayManager_setter">Options for restricting access to the list of user accounts and information attached to these accounts:</dropdownList>
+       <checkBox refId="OrgFreedesktopDisplayManager_blocker">Block</checkBox>
+       <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user</text>
+      </presentation>
+      <presentation id="DispManOwnPolkit-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopDisplayManager_setter">Options for restricting access to the list of user accounts and information attached to these accounts:</dropdownList>
+       <checkBox refId="OrgFreedesktopDisplayManager_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
+      </presentation>
+      <presentation id="DispManReadAnyPolkit-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopDisplayManager_setter">Options for restricting access to the list of user accounts and information attached to these accounts:</dropdownList>
+       <checkBox refId="OrgFreedesktopDisplayManager_blocker">Block</checkBox>
+       <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
+      </presentation>
+    </presentationTable>
+  </resources>
+ </policyDefinitionResources>
+
+
+
