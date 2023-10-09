@@ -166,5 +166,8 @@
     <category name="ALT_TokenPolkit" displayName="$(string.ALT_TokenPolkit)" explainText="$(string.ALT_TokenPolkit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
+    <category name="ALT_AccountsPolkit" displayName="$(string.ALT_AccountsPolkit)" explainText="$(string.ALT_AccountsPolkit_Help)">
+      <parentCategory ref="ALT_Polkit" />
+      </category>
   </categories>
 </policyDefinitions>

@@ -81,6 +81,8 @@
       <string id="ALT_NetworkManagerPolkit_Help">NetworkManager permissions management</string>
       <string id="ALT_TokenPolkit">Token and smart card permissions</string>
       <string id="ALT_TokenPolkit_Help">Token and smart card permissions management</string>
+      <string id="ALT_AccountsPolkit">Restriction of the Accounts service</string>
+      <string id="ALT_AccountsPolkit_Help">Permissions for working with user accounts and sessions</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
