@@ -74,7 +74,7 @@
       <string id="ALT_DisplayManagerPolkit">Restrictions the DisplayManager service</string>
       <string id="ALT_DisplayManagerPolkit_Help">Policy for setting the properties of any user</string>
       <string id="ALT_ModemManagerPolkit">Restrictions the ModemManager service</string>
-      <string id="ALT_ModemManagerPolkit_Help">ModemManager service settings</string>
+      <string id="ALT_ModemManagerPolkit_help">ModemManager service settings</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
