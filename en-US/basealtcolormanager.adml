@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2023 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>ALT polkit-policies definitions of Color-Manager</displayName>
+  <description> This file contains the Color-Manager service polkit-policies definitions used by ALT operating system.</description>
+  <resources>
+    <stringTable>
+
+      <string id="org-freedesktop-color-manager-create-device">Permission to create a color-controlled device</string>
+      <string id="org-freedesktop-color-manager-create-device_Help">The policy controls the restriction on the ability to create a color-managed device
+
+Authentication is required to create a color-controlled device.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-create-device-user">Permission to create a color-controlled device</string>
+      <string id="org-freedesktop-color-manager-create-device-user_Help">The policy controls the restriction on the ability to create a color-managed device
+
+Authentication is required to create a color-controlled device.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-create-profile">Permission to create a color profile</string>
+      <string id="org-freedesktop-color-manager-create-profile_Help">The policy restricts the ability to create a color profile
+
+Authentication is required to create a color profile.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-create-profile-user">Permission to create a color profile</string>
+      <string id="org-freedesktop-color-manager-create-profile-user_Help">The policy restricts the ability to create a color profile
+      
+Authentication is required to create a color profile.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-delete-device">Permission to remove a color-managed device</string>
+      <string id="org-freedesktop-color-manager-delete-device_Help">The policy restricts the ability to remove a color-managed device
+
+Authentication is required to remove a color-controlled device.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-delete-device-user">Permission to remove a color-managed device</string>
+      <string id="org-freedesktop-color-manager-delete-device-user_Help">The policy restricts the ability to remove a color-managed device
+
+Authentication is required to remove a color-controlled device.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-delete-profile">Permission to delete a color profile</string>
+      <string id="org-freedesktop-color-manager-delete-profile_Help">The policy restricts the ability to delete a color profile
+
+Authentication is required to delete a color profile.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-delete-profile-user">Permission to delete a color profile</string>
+      <string id="org-freedesktop-color-manager-delete-profile-user_Help">The policy restricts the ability to delete a color profile
+
+Authentication is required to delete a color profile.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-device-inhibit">Permission to disable color profile selection</string>
+      <string id="org-freedesktop-color-manager-device-inhibit_Help">The policy restricts the ability to disallow color profile selection
+
+The device-inhibit method of the colormgr utility blocks a color profile from being applied to a device. The blocking is set to timeout (in seconds). If the timeout parameter is set to "0", applying the color profile to the device will be blocked "permanently" until the colormgr utility stops running. Polkit allows you to restrict user access to this method. Polkit allows you to restrict user access to this method.
+
+Authentication is required to disallow profile matching for a device.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-device-inhibit-user">Permission to disable color profile selection</string>
+      <string id="org-freedesktop-color-manager-device-inhibit-user_Help">The policy restricts the ability to disallow color profile selection
+      
+The device-inhibit method of the colormgr utility blocks a color profile from being applied to a device. The blocking is set to timeout (in seconds). If the timeout parameter is set to "0", applying the color profile to the device will be blocked "permanently" until the colormgr utility stops running. Polkit allows you to restrict user access to this method. Polkit allows you to restrict user access to this method.
+
+Authentication is required to disallow profile matching for a device.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-install-system-wide">Permission to install system color profiles</string>
+      <string id="org-freedesktop-color-manager-install-system-wide_Help">The policy restricts the ability to set system color profiles
+
+Authentication is required to set the color profile for all users.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-install-system-wide-user">Permission to install system color profiles</string>
+      <string id="org-freedesktop-color-manager-install-system-wide-user_Help">The policy restricts the ability to set system color profiles
+
+Authentication is required to set the color profile for all users.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-modify-device">Permission to change the color settings for the device</string>
+      <string id="org-freedesktop-color-manager-modify-device_Help">The policy restricts the ability to change the color settings for the device
+
+Authentication is required to change the color settings for the device.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-modify-device-user">Permission to change the color settings for the device</string>
+      <string id="org-freedesktop-color-manager-modify-device-user_Help">The policy restricts the ability to change the color settings for the device
+
+Authentication is required to change the color settings for the device.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-modify-profile">Permission to change the color profile</string>
+      <string id="org-freedesktop-color-manager-modify-profile_Help">The policy restricts the ability to change the color profile
+
+Authentication is required to change the color profile.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-modify-profile-user">Permission to change the color profile</string>
+      <string id="org-freedesktop-color-manager-modify-profile-user_Help">The policy restricts the ability to change the color profile
+
+Authentication is required to change the color profile.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-sensor-lock">Permission to use the color sensor</string>
+      <string id="org-freedesktop-color-manager-sensor-lock_Help">The policy restricts the ability to use a color sensor
+
+Authentication is required to use the color sensor.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-color-manager-sensor-lock-user">Permission to use the color sensor</string>
+      <string id="org-freedesktop-color-manager-sensor-lock-user_Help">The policy restricts the ability to use a color sensor
+
+Authentication is required to use the color sensor.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+
+      </string>
+
+      <string id="org-freedesktop-color-manager-No">No</string>
+      <string id="org-freedesktop-color-manager-Yes">Yes</string>
+      <string id="org-freedesktop-color-manager-Auth-self">Auth_self</string>
+      <string id="org-freedesktop-color-manager-Auth-admin">Auth_admin</string>
+      <string id="org-freedesktop-color-manager-Auth-self-keep">Auth_self_keep</string>
+      <string id="org-freedesktop-color-manager-Auth-admin-keep">Auth_admin_keep</string>
+
+    </stringTable>
+    <presentationTable>
+    <presentation id="org-freedesktop-color-manager-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopColor-Manager_setter">Permission options for the Color-Manager service:</dropdownList>
+       <checkBox refId="OrgFreedesktopColor-Manager_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
+        </presentation>
+        <presentation id="org-freedesktop-color-manager-user-pr">
+         <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopColor-Manager_setter">Permission options for the Color-Manager service:</dropdownList>
+        </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
